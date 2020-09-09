@@ -114,3 +114,47 @@ helloDiv.appendChild(helloCommentDiv);
 mainCont.appendChild(helloDiv);
 
 // END HELLO SECTION ------------------------------
+
+// Introduction Section ---------------------------
+
+const introDiv = document.createElement('div');
+introDiv.style.width = '85%';
+introDiv.style.padding = '10px';
+introDiv.style.margin = '20px auto';
+introDiv.style.borderRadius = '5px';
+
+    const introHeader = document.createElement('h5');
+    introHeader.style.fontSize = '20px';
+    introHeader.style.color = 'rgb(60, 142, 191)';
+    introHeader.textContent = 'Introduction to Swift';
+
+    const introPar = document.createElement('p');
+    introPar.style.fontSize = '14px';
+    introPar.textContent = `Swift is a modern programming language developed by Apple to create the next generation of iOS and OSX applications. 
+    Swift is a fairly new language and still in development but it clearly reflects the intentions and the future direction. This article will 
+    revolve around the basic concepts in the Swift language and how you can get started.`
+
+    const introCommentDiv = document.createElement('div');
+    introCommentDiv.style.display = 'flex';
+    introCommentDiv.style.backgroundColor = 'orange';
+    introCommentDiv.style.borderRadius = '5px';
+
+        const introComments = document.createElement('p');
+        introComments.style.marginRight = '30px';
+        introComments.style.color = 'white';
+        introComments.textContent = '15 comments';
+
+        const introLikes = document.createElement('p');
+        introLikes.textContent = '45 likes';
+        introLikes.style.color = 'white';
+    introCommentDiv.appendChild(introComments);
+    introCommentDiv.appendChild(introLikes);
+
+
+introDiv.appendChild(introHeader);
+introDiv.appendChild(introPar);
+introDiv.appendChild(introCommentDiv);
+
+mainCont.appendChild(introDiv);
+
+// END INTRODUCTION SECTION -----------------------
