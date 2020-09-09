@@ -112,3 +112,5 @@ helloDiv.appendChild(helloPar);
 helloDiv.appendChild(helloCommentDiv);
 
 mainCont.appendChild(helloDiv);
+
+// END HELLO SECTION ------------------------------
