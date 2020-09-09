@@ -49,7 +49,7 @@ mainCont.appendChild(navDiv);
 // Reviews Section --------------------------------
 
 const reviewsDiv = document.createElement('div');
-reviewsDiv.style.backgroundColor = 'rgb(181, 181, 181)';
+reviewsDiv.style.backgroundColor = 'rgb(210, 210, 210)';
 reviewsDiv.style.width = '85%';
 reviewsDiv.style.padding = '10px';
 reviewsDiv.style.margin = '20px auto';
@@ -68,3 +68,47 @@ reviewsDiv.appendChild(reviewsHead);
 reviewsDiv.appendChild(reviewsPar);
 
 mainCont.appendChild(reviewsDiv);
+// END REVIEWS SECTION ----------------------------
+
+
+// Hello Section ----------------------------------
+
+const helloDiv = document.createElement('div');
+helloDiv.style.width = '85%';
+helloDiv.style.padding = '10px';
+helloDiv.style.margin = '20px auto';
+helloDiv.style.borderRadius = '5px';
+
+    const helloHeader = document.createElement('h5');
+    helloHeader.style.fontSize = '20px';
+    helloHeader.style.color = 'rgb(60, 142, 191)';
+    helloHeader.textContent = 'Hello WatchKit';
+
+    const helloPar = document.createElement('p');
+    helloPar.style.fontSize = '14px';
+    helloPar.textContent = `Last month Apple released the anticipated WatchKit Framework for developers in teh for of iOS 8.2 beta SDK release.
+    The WatchKit framework enable the developers to create Apple Watch applications. In this article we are going to focus on the basicas of getting 
+    started with the WatchKit framework and developing apps for the Apple Watch.`
+
+    const helloCommentDiv = document.createElement('div');
+    helloCommentDiv.style.display = 'flex';
+    helloCommentDiv.style.backgroundColor = 'orange';
+    helloCommentDiv.style.borderRadius = '5px';
+
+        const helloComments = document.createElement('p');
+        helloComments.style.marginRight = '30px';
+        helloComments.style.color = 'white';
+        helloComments.textContent = '12 comments';
+
+        const helloLikes = document.createElement('p');
+        helloLikes.textContent = '124 likes';
+        helloLikes.style.color = 'white';
+    helloCommentDiv.appendChild(helloComments);
+    helloCommentDiv.appendChild(helloLikes);
+
+
+helloDiv.appendChild(helloHeader);
+helloDiv.appendChild(helloPar);
+helloDiv.appendChild(helloCommentDiv);
+
+mainCont.appendChild(helloDiv);
